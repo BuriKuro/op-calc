@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
     //Store all components on HTML doc.
     let clear = document.querySelector("#cButt");
     let equal = document.querySelector("#finalButt");
-    let decimal = document.querySelector("#decimalButt");
+    let decimal = document.querySelector("#decimal");
     
     let numbers = document.querySelectorAll("#numButt");
     let operators = document.querySelectorAll("#operator");
@@ -36,10 +36,29 @@ document.addEventListener("DOMContentLoaded", function(){
         currentScreen.textContent = currentValue;
     })
 
+    equal.addEventListener("click", function(){
+            if(currentValue != "" && previousValue != ""){
+            calculate()
+            previousScreen.textContent = "";
+
+            if(previousValue.length <= 5 ){
+                currentScreen.textContent = previousValue;
+            } else{
+                currentScreen.textContent = previousValue.slice(0,5) + "...";
+            }
+        }
+
+    })
+
+    decimal.addEventListener("click", function(){
+        addDecimal();
+
+    })
+
 })
 
 function handleNumber(num) {
-    if(currentValue.length <= 7) {
+    if(currentValue.length <= 5) {
      currentValue += num;
     }
 }
@@ -48,4 +67,33 @@ function handleOperator(op){
     operator = op;
     previousValue = currentValue;
     currentValue = "";
+}
+
+function calculate(){
+    previousValue = Number(previousValue);
+    currentValue = Number(currentValue);
+
+    if(operator === "+") {
+        previousValue += currentValue;
+    } else if(operator === "-"){
+        previousValue -= currentValue;
+    } else if (operator === "X"){
+        previousValue *= currentValue;
+    } else {
+        previousValue /= currentValue;
+    }
+
+    previousValue = roundNumber(previousValue);
+    previousValue = previousValue.toString();
+    currentValue = currentValue.toString();
+}
+
+function roundNumber(num){
+    return Math.round(num * 100000) / 100000;
+}
+
+function addDecimal(){
+    if(!currentValue.includes(".")){
+        currentValue += ".";     
+    }
 }

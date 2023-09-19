@@ -108,17 +108,17 @@
     color: rgb(157, 57, 115);
 }
 
-#decimalButt {
+#decimal {
     color: white;
     font-size: 24px;
     background-color: rgb(219, 101, 170);
 }
 
-#decimalButt:hover {
+#decimal:hover {
     background-color: rgb(157, 57, 115);
 }
 
-#decimalButt:active {
+#decimal:active {
     color: rgb(157, 57, 115);
 }
 
