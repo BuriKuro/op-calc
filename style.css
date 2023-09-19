@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "Bubblegum";
+    src: url(Bubblegum.ttf) format("truetype");
+  }
+
+#calcWhole{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Bubblegum";
+    height: 100vh;
+    width: 100vw;
+}
+
+#eyes {
+    display: flex;
+    justify-content: center;
+    margin: 24px;
+}
+
+#calcMain {
+    font-family: "Bubblegum";
+    background-color: rgb(255, 218, 224);
+    padding: 25px;
+    border-radius: 50px;
+}
+
+#calcTop {
+    font-family: "Bubblegum";
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#screen {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: lightpink;
+    color: white;
+    font-family: "Bubblegum";
+    font-size: 34px;
+    height: 60px;
+    width: 100%;
+    border: 25px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+#cButt {
+    color: white;
+    background-color: rgb(219, 101, 170);
+    border: 2px;
+    border-radius: 50px;
+    min-height: 100px;
+    min-width: 100px;
+    margin: 10px;
+}
+
+#cButt:hover {
+    background-color: rgb(157, 57, 115);
+}
+
+
+#numButt {
+    color: white;
+    font-family: "Bubblegum";
+    src: url(Bubblegum.ttf);
+    font-size: 24px;
+    background-color: lightpink;
+    border: 2px;
+    border-radius: 50px;
+    min-height: 100px;
+    min-width: 100px;
+    margin: 10px;
+}
+
+#numButt:hover {
+    background-color: rgb(197, 119, 131);
+}
+
+#opButt {
+    color: white;
+    font-size: 24px;
+    background-color: rgb(136, 71, 155);
+    border: 2px;
+    border-radius: 50px;
+    min-height: 100px;
+    min-width: 100px;
+    margin: 10px;
+}
+
+#opButt:hover {
+    background-color: rgb(105, 39, 138);
+}
+
+#finalButt {
+    color: white;
+    font-size: 24px;
+    background-color: rgb(219, 101, 170);
+    border: 2px;
+    border-radius: 50px;
+    min-height: 100px;
+    min-width: 100px;
+    margin: 10px;
+}
+
+#finalButt:hover {
+    background-color: rgb(157, 57, 115);
+}
+
+button {
+    font-family: "Bubblegum";
+    font-size: 24px;
+}
