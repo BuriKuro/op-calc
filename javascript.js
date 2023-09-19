@@ -55,6 +55,18 @@ document.addEventListener("DOMContentLoaded", function(){
 
     })
 
+    let numButtButtons = document.querySelectorAll("#numButt");
+    numButtButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+            // Get the audio file from the data-audio attribute
+            let audioFile = button.getAttribute("data-audio");
+
+            // Create an audio element and play the audio file
+            let audio = new Audio(audioFile);
+            audio.play();
+        });
+    });
+
 })
 
 function handleNumber(num) {
@@ -97,3 +109,4 @@ function addDecimal(){
         currentValue += ".";     
     }
 }
+
