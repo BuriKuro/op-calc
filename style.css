@@ -54,10 +54,6 @@
     color: white;
     background-color: rgb(219, 101, 170);
     border: 2px;
-    border-radius: 50px;
-    min-height: 100px;
-    min-width: 100px;
-    margin: 10px;
 }
 
 #cButt:hover {
@@ -74,11 +70,6 @@
     src: url(Bubblegum.ttf);
     font-size: 24px;
     background-color: lightpink;
-    border: 2px;
-    border-radius: 50px;
-    min-height: 100px;
-    min-width: 100px;
-    margin: 10px;
 }
 
 #numButt:hover {
@@ -89,22 +80,17 @@
     color: rgb(197, 119, 131);
 }
 
-#opButt {
+#operator {
     color: white;
     font-size: 24px;
     background-color: rgb(136, 71, 155);
-    border: 2px;
-    border-radius: 50px;
-    min-height: 100px;
-    min-width: 100px;
-    margin: 10px;
 }
 
-#opButt:hover {
+#operator:hover {
     background-color: rgb(105, 39, 138);
 }
 
-#opButt:active {
+#operator:active {
     color: rgb(105, 39, 138);
 }
 
@@ -112,11 +98,6 @@
     color: white;
     font-size: 24px;
     background-color: rgb(219, 101, 170);
-    border: 2px;
-    border-radius: 50px;
-    min-height: 100px;
-    min-width: 100px;
-    margin: 10px;
 }
 
 #finalButt:hover {
@@ -127,7 +108,26 @@
     color: rgb(157, 57, 115);
 }
 
+#decimalButt {
+    color: white;
+    font-size: 24px;
+    background-color: rgb(219, 101, 170);
+}
+
+#decimalButt:hover {
+    background-color: rgb(157, 57, 115);
+}
+
+#decimalButt:active {
+    color: rgb(157, 57, 115);
+}
+
 button {
     font-family: "Bubblegum";
     font-size: 24px;
+    border: 2px;
+    border-radius: 50px;
+    min-height: 100px;
+    min-width: 100px;
+    margin: 10px;
 }
