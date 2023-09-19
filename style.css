@@ -64,6 +64,9 @@
     background-color: rgb(157, 57, 115);
 }
 
+#cButt:active {
+    color: rgb(157, 57, 115);
+}
 
 #numButt {
     color: white;
@@ -82,6 +85,10 @@
     background-color: rgb(197, 119, 131);
 }
 
+#numButt:active {
+    color: rgb(197, 119, 131);
+}
+
 #opButt {
     color: white;
     font-size: 24px;
@@ -97,6 +104,10 @@
     background-color: rgb(105, 39, 138);
 }
 
+#opButt:active {
+    color: rgb(105, 39, 138);
+}
+
 #finalButt {
     color: white;
     font-size: 24px;
@@ -110,6 +121,10 @@
 
 #finalButt:hover {
     background-color: rgb(157, 57, 115);
+}
+
+#finalButt:active {
+    color: rgb(157, 57, 115);
 }
 
 button {
